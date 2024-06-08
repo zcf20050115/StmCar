@@ -263,6 +263,45 @@ void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Leng
 	}
 }
 
+
+void OLED_ShowFNum(uint8_t Line, uint8_t Column, float Number, uint8_t Length,uint8_t Flength)
+{
+    uint8_t i;
+    uint8_t flag = 1;
+    float Number1;
+    uint32_t Number2;
+    if (Number >= 0)
+    {
+        OLED_ShowChar(Line, Column, '+');
+        Number1 = Number;
+    }
+    else
+    {
+        OLED_ShowChar(Line, Column, '-');
+        Number1 = -Number;
+    }
+		
+    Number2 = (int)(Number1 * OLED_Pow(10,Flength));
+    
+    
+    for (i = Length; i > 0; i--)                            
+    {
+        if(i == (Length - Flength))
+        {
+            OLED_ShowChar(Line,Column + i + flag,'.');
+            flag = 0;
+            OLED_ShowChar(Line, Column + i + flag, Number2 / OLED_Pow(10, Length - i) % 10 + '0');
+        }
+        else
+        {
+            OLED_ShowChar(Line, Column + i + flag, Number2 / OLED_Pow(10, Length - i) % 10 + '0');
+        }
+        
+    }    
+        
+}
+
+
 /**
   * @brief  OLED初始化
   * @param  无
@@ -276,6 +315,8 @@ void OLED_Init(void)
 	{
 		for (j = 0; j < 1000; j++);
 	}
+	
+	
 	
 	OLED_I2C_Init();			//端口初始化
 	

@@ -830,6 +830,26 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Beep.h</FilePath>
             </File>
+            <File>
+              <FileName>Temperature.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Temperature.c</FilePath>
+            </File>
+            <File>
+              <FileName>Temperature.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Temperature.h</FilePath>
+            </File>
+            <File>
+              <FileName>K210Usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\K210Usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>K210Usart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\K210Usart.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

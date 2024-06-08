@@ -30,6 +30,7 @@
 .\objects\main.o: .\Library\misc.h
 .\objects\main.o: .\Hardware\OLED.h
 .\objects\main.o: .\Function\Delay.h
+.\objects\main.o: .\Hardware\CountSensor.h
 .\objects\main.o: .\Function\Timer.h
 .\objects\main.o: .\Hardware\Motor.h
 .\objects\main.o: .\Hardware\Bluetooth.h
@@ -37,3 +38,5 @@
 .\objects\main.o: .\Hardware\MPU6050.h
 .\objects\main.o: .\Hardware\HCSR04.h
 .\objects\main.o: .\Hardware\Beep.h
+.\objects\main.o: .\Hardware\Temperature.h
+.\objects\main.o: .\Hardware\K210Usart.h

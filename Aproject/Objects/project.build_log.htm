@@ -21,26 +21,26 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-C:\Users\12903\Desktop\Aproject\Aproject\project.uvprojx
-Project File Date:  06/07/2024
+C:\Users\12903\Desktop\StmCar\Aproject_1.2v\Aproject\project.uvprojx
+Project File Date:  06/08/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Application\Keil\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling HCSR04.c...
-Hardware\HCSR04.c(22): warning:  #188-D: enumerated type mixed with another type
-  	GPIO_WriteBit(GPIOB,GPIO_Pin_5,0);						
-Hardware\HCSR04.c(29): warning:  #188-D: enumerated type mixed with another type
-  	GPIO_WriteBit(GPIOB,Trig,1);						
-Hardware\HCSR04.c(31): warning:  #188-D: enumerated type mixed with another type
-  	GPIO_WriteBit(GPIOB,Trig,0);						
-Hardware\HCSR04.c(48): warning:  #188-D: enumerated type mixed with another type
-  	GPIO_WriteBit(GPIOB,Trig,1);					
-Hardware\HCSR04.c(50): warning:  #188-D: enumerated type mixed with another type
-  	GPIO_WriteBit(GPIOB,Trig,0);					
-Hardware\HCSR04.c: 5 warnings, 0 errors
+compiling main.c...
+.\Hardware\Motor.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\Hardware\MyI2C.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\Hardware\MPU6050.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\Hardware\Beep.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\Hardware\K210Usart.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif 
+User\main.c: 5 warnings, 0 errors
 linking...
-Program Size: Code=6096 RO-data=1788 RW-data=56 ZI-data=1632  
+Program Size: Code=8476 RO-data=1788 RW-data=60 ZI-data=1644  
 FromELF: creating hex file...
 ".\Objects\project.axf" - 0 Error(s), 5 Warning(s).
 

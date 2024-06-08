@@ -41,6 +41,8 @@
 ".\objects\hdl_ws2812b.o"
 ".\objects\hcsr04.o"
 ".\objects\beep.o"
+".\objects\temperature.o"
+".\objects\k210usart.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\main.o"
 --strict --scatter ".\Objects\project.sct"

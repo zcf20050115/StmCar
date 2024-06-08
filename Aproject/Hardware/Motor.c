@@ -21,8 +21,8 @@ void Motor_ForWard(int8_t speed)
 		GPIO_SetBits(GPIOA,GPIO_Pin_6);
 		GPIO_ResetBits(GPIOA,GPIO_Pin_7);
 		
-		PWM_SetCompare3(speed);
-		PWM_SetCompare4(speed);
+		PWM_SetCompare1(speed);
+		PWM_SetCompare2(speed);
 	
 }
 void Motor_BackWard(int8_t speed)
@@ -34,8 +34,8 @@ void Motor_BackWard(int8_t speed)
 		GPIO_SetBits(GPIOA,GPIO_Pin_7);
 		
 		
-		PWM_SetCompare3(speed);
-		PWM_SetCompare4(speed);
+		PWM_SetCompare1(speed);
+		PWM_SetCompare2(speed);
 }
 void Motor_Turn_Left(int8_t speed)
 {
@@ -46,8 +46,8 @@ void Motor_Turn_Left(int8_t speed)
 		GPIO_ResetBits(GPIOA,GPIO_Pin_7);
 		
 		
-		PWM_SetCompare3(speed);
-		PWM_SetCompare4(speed);
+		PWM_SetCompare1(speed);
+		PWM_SetCompare2(speed);
 }
 void Motor_Turn_Right(int8_t speed)
 {
@@ -58,8 +58,8 @@ void Motor_Turn_Right(int8_t speed)
 		GPIO_ResetBits(GPIOA,GPIO_Pin_7);
 		
 		
-		PWM_SetCompare3(speed);
-		PWM_SetCompare4(speed);
+		PWM_SetCompare1(speed);
+		PWM_SetCompare2(speed);
 }
 void Motor_Stop(int8_t speed)
 {
@@ -70,6 +70,6 @@ void Motor_Stop(int8_t speed)
 		GPIO_ResetBits(GPIOA,GPIO_Pin_7);
 		
 		
-		PWM_SetCompare3(speed);
-		PWM_SetCompare4(speed);
+		PWM_SetCompare1(speed);
+		PWM_SetCompare2(speed);
 }

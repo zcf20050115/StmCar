@@ -69,7 +69,23 @@ uint8_t GetRxFlag(void)
 	return 0;
 }
 
+
 uint8_t GetRxData(void)
 {
 	return RxData;
+}
+
+
+
+void USART_SendString(USART_TypeDef* USARTx, char *DataString)
+{
+	int i = 0;
+	USART_ClearFlag(USARTx,USART_FLAG_TC);										
+	while(DataString[i] != '\0')												
+	{
+		USART_SendData(USARTx,DataString[i]);									
+		while(USART_GetFlagStatus(USARTx,USART_FLAG_TC) == 0);					
+		USART_ClearFlag(USARTx,USART_FLAG_TC);									
+		i++;
+	}
 }
